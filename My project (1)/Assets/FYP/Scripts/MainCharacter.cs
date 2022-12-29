@@ -92,35 +92,7 @@ public class MainCharacter : MonoBehaviour
                     transform.position += transform.up * 0;
                 }
             }
-            else
-            {
-                if (target.transform.position.x < this.transform.position.x + attackRange)
-                {
-                    transform.position += transform.right * Time.deltaTime * -moveSpeed;
-                    spriteRenderer.sprite = lookLeft;
-                }
-                else if (target.transform.position.x > this.transform.position.x - attackRange)
-                {
-                    transform.position += transform.right * Time.deltaTime * moveSpeed;
-                    spriteRenderer.sprite = lookRight;
-                }
-
-
-
-
-                if (target.transform.position.y < this.transform.position.y + attackRange)
-                {
-                    transform.position += transform.up * Time.deltaTime * -moveSpeed;
-                    spriteRenderer.sprite = lookBackward;
-
-                }
-                else if (target.transform.position.y > this.transform.position.y - attackRange)
-                {
-                    transform.position += transform.up * Time.deltaTime * moveSpeed;
-                    spriteRenderer.sprite = lookForward;
-                }
-
-            }
+            
         }
 
 
@@ -167,6 +139,7 @@ public class MainCharacter : MonoBehaviour
     public void AddExp()
     {
         exp += 20;
+        Debug.Log("exp added!");
     }
 
     public void GetHurt(int atkvalue)
