@@ -12,10 +12,14 @@ public class LevelManager : MonoBehaviour
     public GameObject[] deplyableObjects;
     int objectslection;
     Vector3 worldPosition;
-
+    public GameObject cam1, cam2, cam3, cam4;
+    public Transform superWeaponSpawn;
     // Start is called before the first frame update
     void Start()
     {
+        cam2.SetActive(false);
+        cam3.SetActive(false);
+        cam4.SetActive(false);
         objectslection = 0;
         wave = 1;
         SpawnEnemy();
@@ -51,9 +55,10 @@ public class LevelManager : MonoBehaviour
         
     }
 
-    void DeployObject()
+    public void DeployObject()
     {
-        Instantiate(deplyableObjects[objectslection],worldPosition,new Quaternion(0,0,0,0));
+        //Instantiate(deplyableObjects[objectslection],worldPosition,new Quaternion(0,0,0,0));
+        Instantiate(deplyableObjects[objectslection], superWeaponSpawn);
 
 
 
@@ -81,5 +86,37 @@ public class LevelManager : MonoBehaviour
     public void O5()
     {
         objectslection = 5;
+    }
+    public void Cam1On()
+    {
+        cam1.SetActive(true);
+        cam2.SetActive(false);
+        cam3.SetActive(false);
+        cam4.SetActive(false);
+
+    }
+    public void Cam2On()
+    {
+        cam1.SetActive(false);
+        cam1.SetActive(true);
+        cam3.SetActive(false);
+        cam4.SetActive(false);
+
+    }
+    public void Cam3On()
+    {
+        cam1.SetActive(false);
+        cam2.SetActive(false);
+        cam3.SetActive(true);
+        cam4.SetActive(false);
+
+    }
+    public void Cam4On()
+    {
+        cam1.SetActive(false);
+        cam2.SetActive(false);
+        cam3.SetActive(false);
+        cam4.SetActive(true);
+
     }
 }
