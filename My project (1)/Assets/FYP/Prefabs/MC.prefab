@@ -44,6 +44,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -73,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,7 +102,8 @@ MonoBehaviour:
   exp: 0
   lv: 1
   atk: 25
-  projectile: {fileID: 5235766064389198839, guid: 645fa465ee039074ebf14a4686e19b15, type: 3}
+  projectile: {fileID: 5235766064389198839, guid: 645fa465ee039074ebf14a4686e19b15,
+    type: 3}
   fireRate: 2
   attackRange: 20
   pLv: {fileID: 0}
@@ -108,10 +111,14 @@ MonoBehaviour:
   pHp: {fileID: 0}
   lVText: {fileID: 0}
   target: {fileID: 5129928519325876327, guid: bda9481d6f1ede04084e8ef9588b955d, type: 3}
-  lookForward: {fileID: -6818122921771007725, guid: bfa1972b0e6ad56409b5598054e3c526, type: 3}
-  lookBackward: {fileID: 5549198270472687174, guid: bfa1972b0e6ad56409b5598054e3c526, type: 3}
-  lookLeft: {fileID: -2299566217853158732, guid: bfa1972b0e6ad56409b5598054e3c526, type: 3}
-  lookRight: {fileID: 9070068960180530171, guid: bfa1972b0e6ad56409b5598054e3c526, type: 3}
+  lookForward: {fileID: -6818122921771007725, guid: bfa1972b0e6ad56409b5598054e3c526,
+    type: 3}
+  lookBackward: {fileID: 5549198270472687174, guid: bfa1972b0e6ad56409b5598054e3c526,
+    type: 3}
+  lookLeft: {fileID: -2299566217853158732, guid: bfa1972b0e6ad56409b5598054e3c526,
+    type: 3}
+  lookRight: {fileID: 9070068960180530171, guid: bfa1972b0e6ad56409b5598054e3c526,
+    type: 3}
   spriteRenderer: {fileID: 1339071706044910229}
   hpSlider: {fileID: 0}
   expSlider: {fileID: 0}
