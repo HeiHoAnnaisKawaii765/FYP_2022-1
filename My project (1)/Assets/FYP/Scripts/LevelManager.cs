@@ -98,7 +98,7 @@ public class LevelManager : MonoBehaviour
     public void Cam2On()
     {
         cam1.SetActive(false);
-        cam1.SetActive(true);
+        cam2.SetActive(true);
         cam3.SetActive(false);
         cam4.SetActive(false);
 

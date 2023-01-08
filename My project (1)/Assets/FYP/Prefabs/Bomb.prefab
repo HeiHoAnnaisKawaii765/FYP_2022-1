@@ -126,4 +126,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c806011a27ac04cb094964b9ca10c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropGroudEffect: {fileID: 0}
+  dropGroudEffect: {fileID: 7387734052245181881, guid: 9688ea66f274fdf4c95aeebc0707a0c1,
+    type: 3}
