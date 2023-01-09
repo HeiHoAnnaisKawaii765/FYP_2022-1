@@ -11,8 +11,9 @@ public class MainCharacter : MonoBehaviour
     public int exp = 0;
     public int lv = 1;
     public int atk = 25;
+    
     int maxExp;
-
+    bool wall;
     float moveSpeed = 2;
 
 
@@ -192,6 +193,9 @@ public class MainCharacter : MonoBehaviour
             hp -= FindObjectOfType<Enemy>().atk * (1 / lv);
 
         }
-        
+        if(other.tag == "Wall")
+        {
+            gameObject.transform.position = new Vector3(24.61f,-1.67f,0f);
+        }
     }
 }

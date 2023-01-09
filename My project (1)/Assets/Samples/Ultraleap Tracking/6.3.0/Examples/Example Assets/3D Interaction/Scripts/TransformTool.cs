@@ -19,7 +19,7 @@ namespace Leap.InteractionEngine.Examples
 
         [Tooltip("The scene's InteractionManager, used to get InteractionControllers and "
                + "manage handle state.")]
-        public InteractionManager interactionManager;
+        public InteractionManagerLeftDown interactionManager;
 
         [Tooltip("The target object to be moved by this tool.")]
         public Transform target;
@@ -39,7 +39,7 @@ namespace Leap.InteractionEngine.Examples
         {
             if (interactionManager == null)
             {
-                interactionManager = InteractionManager.instance;
+                interactionManager = InteractionManagerLeftDown.instance;
             }
 
             foreach (var handle in GetComponentsInChildren<TransformHandle>())
