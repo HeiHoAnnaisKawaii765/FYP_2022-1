@@ -32,10 +32,7 @@ public class LevelManager : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
         worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
-        if (FindObjectOfType<Enemy>() == null)
-        {
-            SpawnEnemy();
-        }
+        
         if(Input.GetMouseButtonDown(0))
         {
             DeployObject();

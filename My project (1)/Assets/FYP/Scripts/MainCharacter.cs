@@ -44,8 +44,9 @@ public class MainCharacter : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = lookForward;
         maxExp = 10000;
+        exp = PlayerPrefs.GetInt("EXP");
+        lv = PlayerPrefs.GetInt("LV");
 
-        
     }
 
     // Update is called once per frame
@@ -121,6 +122,12 @@ public class MainCharacter : MonoBehaviour
                 }
 
             }
+        }
+        else
+        {
+            PlayerPrefs.SetInt("EXP", exp);
+            PlayerPrefs.SetInt("LV", lv);
+            
         }
 
 

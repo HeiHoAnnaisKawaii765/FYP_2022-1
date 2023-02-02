@@ -127,3 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropGroudEffect: {fileID: 0}
+  chaseTarget: 1
+  moveSpeed: 20
+  TargetOChase: {fileID: 5129928519325876327, guid: bda9481d6f1ede04084e8ef9588b955d,
+    type: 3}
