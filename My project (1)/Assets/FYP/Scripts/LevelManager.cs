@@ -23,20 +23,14 @@ public class LevelManager : MonoBehaviour
         objectslection = 0;
         wave = 1;
         SpawnEnemy();
+        superWeaponSpawn = cam1.transform;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.nearClipPlane;
-        worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
         
-        if(Input.GetMouseButtonDown(0))
-        {
-            DeployObject();
-        }
     }
 
     void SpawnEnemy()
@@ -46,11 +40,7 @@ public class LevelManager : MonoBehaviour
             Instantiate(enemyPrefabs[wave - 1], spawnPoints[i]);
         }
     }
-    IEnumerator Nextwave()
-    {
-        yield return new WaitForSeconds(10f);
-        
-    }
+    
 
     public void DeployObject()
     {
@@ -90,6 +80,7 @@ public class LevelManager : MonoBehaviour
         cam2.SetActive(false);
         cam3.SetActive(false);
         cam4.SetActive(false);
+        superWeaponSpawn = cam1.transform;
 
     }
     public void Cam2On()
@@ -98,6 +89,7 @@ public class LevelManager : MonoBehaviour
         cam1.SetActive(true);
         cam3.SetActive(false);
         cam4.SetActive(false);
+        superWeaponSpawn = cam2.transform;
 
     }
     public void Cam3On()
@@ -106,7 +98,7 @@ public class LevelManager : MonoBehaviour
         cam2.SetActive(false);
         cam3.SetActive(true);
         cam4.SetActive(false);
-
+        superWeaponSpawn = cam3.transform;
     }
     public void Cam4On()
     {
@@ -114,6 +106,7 @@ public class LevelManager : MonoBehaviour
         cam2.SetActive(false);
         cam3.SetActive(false);
         cam4.SetActive(true);
+        superWeaponSpawn = cam4.transform;
 
     }
 }
