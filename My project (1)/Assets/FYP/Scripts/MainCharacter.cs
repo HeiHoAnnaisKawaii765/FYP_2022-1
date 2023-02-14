@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class MainCharacter : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     //states
     public int hp = 100;
     public int exp = 0;
     public int lv = 1;
     public int atk = 25;
+    
     int maxExp;
-
+    bool wall;
     float moveSpeed = 2;
 
-
+    public string SceneName;
 
     //attack
     public GameObject projectile;
@@ -133,7 +136,9 @@ public class MainCharacter : MonoBehaviour
 
         if (hp <= 0)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene(SceneName);
+            //Destroy(gameObject);
+
         }
         if ((target.transform.position.x - this.transform.position.x <= attackRange && target.transform.position.x - this.transform.position.x >= -attackRange && target.transform.position.y - this.transform.position.y <= attackRange && target.transform.position.y - this.transform.position.y >= -attackRange))
         {
@@ -199,6 +204,9 @@ public class MainCharacter : MonoBehaviour
             hp -= FindObjectOfType<Enemy>().atk * (1 / lv);
 
         }
-        
+        if(other.tag == "Wall")
+        {
+            gameObject.transform.position = new Vector3(24.61f,-1.67f,0f);
+        }
     }
 }

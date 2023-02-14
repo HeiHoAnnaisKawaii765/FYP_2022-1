@@ -106,6 +106,11 @@ public class Enemy : MonoBehaviour
             touched = false;
         }
 
+        if(other.tag == "Explosion")
+        {
+            HP -= 100;
+        }
+
     }
     
     public void Dead()
