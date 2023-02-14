@@ -28,7 +28,11 @@ public class ThrowableObjectScipt : MonoBehaviour
 		if (other.tag == "Ground")
 		{
 			Instantiate(dropGroudEffect, this.transform.position, new Quaternion(0, 0, 0, 0));
+
 			Destroy(gameObject, 1f);
+
+			Destroy(gameObject, 2f);
+
 		}
 	}
 }

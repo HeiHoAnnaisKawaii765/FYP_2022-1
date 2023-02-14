@@ -12,14 +12,16 @@ public class LevelManager : MonoBehaviour
     public GameObject[] deplyableObjects;
     int objectslection;
     Vector3 worldPosition;
+    public GameObject LeftUP, LeftDown, RightUP, RightDown;
+    public Transform WeaponSpawnLeftUP, WeaponSpawnLeftDown, WeaponSpawnRightUP, WeaponSpawnRightDown;
     public GameObject cam1, cam2, cam3, cam4;
     public Transform superWeaponSpawn;
     // Start is called before the first frame update
     void Start()
     {
-        cam2.SetActive(false);
-        cam3.SetActive(false);
-        cam4.SetActive(false);
+        LeftDown.SetActive(false);
+        RightUP.SetActive(false);
+        RightDown.SetActive(false);
         objectslection = 0;
         wave = 1;
         SpawnEnemy();
@@ -45,7 +47,7 @@ public class LevelManager : MonoBehaviour
     public void DeployObject()
     {
         //Instantiate(deplyableObjects[objectslection],worldPosition,new Quaternion(0,0,0,0));
-        Instantiate(deplyableObjects[objectslection], superWeaponSpawn);
+        Instantiate(deplyableObjects[objectslection], WeaponSpawnLeftUP);
 
 
 
@@ -74,39 +76,74 @@ public class LevelManager : MonoBehaviour
     {
         objectslection = 5;
     }
-    public void Cam1On()
+    public void LeftUP_On()
     {
+
         cam1.SetActive(true);
         cam2.SetActive(false);
         cam3.SetActive(false);
         cam4.SetActive(false);
         superWeaponSpawn = cam1.transform;
 
+        LeftUP.SetActive(true);
+        LeftDown.SetActive(false);
+        RightUP.SetActive(false);
+        RightDown.SetActive(false);
+
+
     }
-    public void Cam2On()
+    public void LeftDown_ON()
     {
+
         cam1.SetActive(false);
         cam1.SetActive(true);
         cam3.SetActive(false);
         cam4.SetActive(false);
         superWeaponSpawn = cam2.transform;
 
+        
+
+
     }
-    public void Cam3On()
+    public void RightUP_ON()
     {
+
         cam1.SetActive(false);
         cam2.SetActive(false);
         cam3.SetActive(true);
         cam4.SetActive(false);
         superWeaponSpawn = cam3.transform;
+
+
+
     }
-    public void Cam4On()
+    public void RightDown_ON()
     {
+
         cam1.SetActive(false);
         cam2.SetActive(false);
         cam3.SetActive(false);
         cam4.SetActive(true);
         superWeaponSpawn = cam4.transform;
 
+
+    }
+
+    public void SpawnBombLeftUP()
+    {
+        DeployObject();
+    }
+
+    public void SpawnBombLeftDown()
+    {
+        DeployObject();
+    }
+    public void SpawnBombRightUP()
+    {
+        DeployObject();
+    }
+    public void SpawnBombRightDown()
+    {
+        DeployObject();
     }
 }
