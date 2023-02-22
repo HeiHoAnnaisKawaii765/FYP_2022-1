@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
         RightDown.SetActive(false);
         objectslection = 0;
         wave = 1;
-        SpawnEnemy();
+        
         superWeaponSpawn = cam1.transform;
 
     }

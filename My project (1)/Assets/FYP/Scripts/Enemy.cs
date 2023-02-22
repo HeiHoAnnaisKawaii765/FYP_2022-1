@@ -20,13 +20,21 @@ public class Enemy : MonoBehaviour
     public bool touched;
 
     public GameObject weapon;
+
+    public Transform[] waypoints;
     
+    private Vector3 target;
+
+    int n;
+
     // Start is called before the first frame update
     void Start()
     {
+        n = 0;
         touched = false;
         mc = FindObjectOfType<MainCharacter>();
         nextAttack = Time.time;
+        target = waypoints[n].position;
     }
 
     // Update is called once per frame
@@ -41,41 +49,19 @@ public class Enemy : MonoBehaviour
             Dead();
         }
 
-
-        if (player.transform.position.x > this.transform.position.x + atkRange)
-        {
-            transform.position += transform.right * Time.deltaTime * movingSpeed;
-            
-        }
-        else if (player.transform.position.x < this.transform.position.x - atkRange)
-        {
-            transform.position += transform.right * Time.deltaTime * -movingSpeed;
-            
-        }
-        else
-        {
-            transform.position += transform.right * 0;
-        }
-
-
-
-        if (player.transform.position.y > this.transform.position.y + atkRange)
-        {
-            transform.position += transform.up * Time.deltaTime * movingSpeed;
-            
-
-        }
-        else if (player.transform.position.y < this.transform.position.y - atkRange)
-        {
-            transform.position += transform.up * Time.deltaTime * -movingSpeed;
-            
-        }
-        else
-        {
-            transform.position += transform.up * 0;
-        }
-
+       transform.position = Vector3.MoveTowards(transform.position, target, movingSpeed);
         
+        if (transform.position == waypoints[n].position)
+        {
+            n += 1;
+            if(n>waypoints.Length)
+            {
+                n = 0;
+            }
+            target = waypoints[n].position;
+        }
+
+
         if ((mc.transform.position.x - this.transform.position.x <= atkRange && mc.transform.position.x - this.transform.position.x >= -atkRange && mc.transform.position.y - this.transform.position.y <= atkRange && mc.transform.position.y - this.transform.position.y >= -atkRange))
         {
             if (Time.time > nextAttack)
