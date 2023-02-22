@@ -41,7 +41,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
 
-        player =  FindObjectOfType<MainCharacter>().gameObject;
+        //player =  FindObjectOfType<MainCharacter>().gameObject;
 
         if (HP <= 0)
         {
@@ -49,12 +49,12 @@ public class Enemy : MonoBehaviour
             Dead();
         }
 
-       transform.position = Vector3.MoveTowards(transform.position, target, movingSpeed);
+       transform.position = Vector3.MoveTowards(this.transform.position, target, movingSpeed * Time.deltaTime);
         
         if (transform.position == waypoints[n].position)
         {
             n += 1;
-            if(n>waypoints.Length)
+            if(n>=waypoints.Length)
             {
                 n = 0;
             }
