@@ -39,7 +39,14 @@ public class MainCharacter : MonoBehaviour
 
     Enemy enemy;
     public Slider hpSlider, expSlider;
-    
+
+    [SerializeField]
+    Transform[] waypoints;
+    [SerializeField]
+    Transform FinalPos;
+    int n = 0;
+
+    private Vector3 wayPt;
 
     void Start()
     {
@@ -49,6 +56,8 @@ public class MainCharacter : MonoBehaviour
         maxExp = 10000;
         exp = PlayerPrefs.GetInt("EXP");
         lv = PlayerPrefs.GetInt("LV");
+
+        wayPt = waypoints[n].position;
 
     }
 
@@ -60,76 +69,18 @@ public class MainCharacter : MonoBehaviour
 
         if (FindObjectOfType<Enemy>() != null)
         {
-            if (hp > 50)
+            transform.position = Vector3.MoveTowards(this.transform.position, wayPt,moveSpeed * Time.deltaTime);
+            if (transform.position == waypoints[n].position)
             {
-
-                if (target.transform.position.x > this.transform.position.x + attackRange)
-                {
-                    transform.position += transform.right * Time.deltaTime * moveSpeed;
-                    spriteRenderer.sprite = lookRight;
-                }
-                else if (target.transform.position.x < this.transform.position.x - attackRange)
-                {
-                    transform.position += transform.right * Time.deltaTime * -moveSpeed;
-                    spriteRenderer.sprite = lookLeft;
-                }
-                else
-                {
-                    transform.position += transform.right * 0;
-                }
-
-
-
-                if (target.transform.position.y > this.transform.position.y + attackRange)
-                {
-                    transform.position += transform.up * Time.deltaTime * moveSpeed;
-                    spriteRenderer.sprite = lookForward;
-
-                }
-                else if (target.transform.position.y < this.transform.position.y - attackRange)
-                {
-                    transform.position += transform.up * Time.deltaTime * -moveSpeed;
-                    spriteRenderer.sprite = lookBackward;
-                }
-                else
-                {
-                    transform.position += transform.up * 0;
-                }
-            }
-            else
-            {
-                if (target.transform.position.x < this.transform.position.x + attackRange)
-                {
-                    transform.position += transform.right * Time.deltaTime * -moveSpeed;
-                    spriteRenderer.sprite = lookLeft;
-                }
-                else if (target.transform.position.x > this.transform.position.x - attackRange)
-                {
-                    transform.position += transform.right * Time.deltaTime * moveSpeed;
-                    spriteRenderer.sprite = lookRight;
-                }
-
-
-
-
-                if (target.transform.position.y < this.transform.position.y + attackRange)
-                {
-                    transform.position += transform.up * Time.deltaTime * -moveSpeed;
-                    spriteRenderer.sprite = lookBackward;
-
-                }
-                else if (target.transform.position.y > this.transform.position.y - attackRange)
-                {
-                    transform.position += transform.up * Time.deltaTime * moveSpeed;
-                    spriteRenderer.sprite = lookForward;
-                }
-
+                n = Random.Range(0, waypoints.Length);
+                
+                wayPt = waypoints[n].position;
             }
         }
         else
         {
-            PlayerPrefs.SetInt("EXP", exp);
-            PlayerPrefs.SetInt("LV", lv);
+            //PlayerPrefs.SetInt("EXP", exp);
+            //PlayerPrefs.SetInt("LV", lv);
             
         }
 
@@ -140,7 +91,7 @@ public class MainCharacter : MonoBehaviour
             //Destroy(gameObject);
 
         }
-        if ((target.transform.position.x - this.transform.position.x <= attackRange && target.transform.position.x - this.transform.position.x >= -attackRange && target.transform.position.y - this.transform.position.y <= attackRange && target.transform.position.y - this.transform.position.y >= -attackRange))
+        if (Vector3.Distance(target.transform.position,this.transform.position) <= attackRange)
         {
             CheckIfTimeToFire();
         }
