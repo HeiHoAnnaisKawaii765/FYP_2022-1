@@ -52,6 +52,7 @@ public class LevelManager : MonoBehaviour
 
 
     }
+    #region BTN
     public void selectNone ()
     {
         objectslection = 0;
@@ -146,4 +147,9 @@ public class LevelManager : MonoBehaviour
     {
         DeployObject();
     }
+    #endregion
+
+    
+
+
 }

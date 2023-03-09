@@ -64,12 +64,13 @@ public class MainCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        target = FindObjectOfType<Enemy>().gameObject;
-        
+        transform.position = Vector3.MoveTowards(this.transform.position, wayPt, moveSpeed * Time.deltaTime);
+
 
         if (FindObjectOfType<Enemy>() != null)
         {
-            transform.position = Vector3.MoveTowards(this.transform.position, wayPt,moveSpeed * Time.deltaTime);
+            target = FindObjectOfType<Enemy>().gameObject;
+            
             if (transform.position == waypoints[n].position)
             {
                 n = Random.Range(0, waypoints.Length);
@@ -79,6 +80,7 @@ public class MainCharacter : MonoBehaviour
         }
         else
         {
+            wayPt = FinalPos.position;
             //PlayerPrefs.SetInt("EXP", exp);
             //PlayerPrefs.SetInt("LV", lv);
             

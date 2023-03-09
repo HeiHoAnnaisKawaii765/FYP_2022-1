@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,6 +102,7 @@ MonoBehaviour:
   exp: 0
   lv: 1
   atk: 25
+  SceneName: 
   projectile: {fileID: 5235766064389198839, guid: 645fa465ee039074ebf14a4686e19b15,
     type: 3}
   fireRate: 2
@@ -122,6 +123,8 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1339071706044910229}
   hpSlider: {fileID: 0}
   expSlider: {fileID: 0}
+  waypoints: []
+  FinalPos: {fileID: 0}
 --- !u!61 &1339071706044910224
 BoxCollider2D:
   m_ObjectHideFlags: 0
