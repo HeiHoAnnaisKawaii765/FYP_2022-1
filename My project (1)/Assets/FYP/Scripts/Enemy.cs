@@ -53,16 +53,13 @@ public class Enemy : MonoBehaviour
         
         if (transform.position == waypoints[n].position)
         {
-            int incendesen = 1;
-            n += incendesen;
+            
+            n += 1;
             if(n>=waypoints.Length)
             {
-                incendesen *= -1;
+                n = 0;
             }
-            else if(n<0)
-            {
-                incendesen *= -1;
-            }
+            
             target = waypoints[n].position;
         }
 
