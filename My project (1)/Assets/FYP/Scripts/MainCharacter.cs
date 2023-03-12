@@ -77,6 +77,10 @@ public class MainCharacter : MonoBehaviour
                 
                 wayPt = waypoints[n].position;
             }
+            if (Vector3.Distance(target.transform.position, this.transform.position) <= attackRange)
+            {
+                CheckIfTimeToFire();
+            }
         }
         else
         {
@@ -93,10 +97,7 @@ public class MainCharacter : MonoBehaviour
             //Destroy(gameObject);
 
         }
-        if (Vector3.Distance(target.transform.position,this.transform.position) <= attackRange)
-        {
-            CheckIfTimeToFire();
-        }
+        
 
 
         pHp.text = "HP: " + hp.ToString();
