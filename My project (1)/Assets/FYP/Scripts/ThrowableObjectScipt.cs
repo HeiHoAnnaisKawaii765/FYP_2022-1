@@ -14,14 +14,19 @@ public class ThrowableObjectScipt : MonoBehaviour
 
     private void Update()
     {
-       TargetOChase = FindObjectOfType<Enemy>().gameObject;
-		if(chaseTarget)
-
+		if(FindObjectOfType<Enemy>()!=null)
         {
-			transform.localPosition += transform.forward * moveSpeed * Time.deltaTime;
+			TargetOChase = FindObjectOfType<Enemy>().gameObject;
+				if(chaseTarget)
+
+				{
+					transform.localPosition += transform.forward * moveSpeed * Time.deltaTime;
 			
-			transform.LookAt(TargetOChase.transform);
-        }
+					transform.LookAt(TargetOChase.transform);
+				}
+		}
+       
+		
 	}
     private void OnTriggerEnter(Collider other)
 	{

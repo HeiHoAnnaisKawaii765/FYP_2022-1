@@ -48,6 +48,8 @@ public class MainCharacter : MonoBehaviour
 
     private Vector3 wayPt;
 
+    Constrain constrain;
+
     void Start()
     {
         nextFire = Time.time;
