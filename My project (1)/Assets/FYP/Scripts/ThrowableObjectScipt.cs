@@ -12,6 +12,8 @@ public class ThrowableObjectScipt : MonoBehaviour
 
 	public GameObject TargetOChase;
 
+
+	public SpecialRewardLevelManager specialRewardLevelManager;
     private void Update()
     {
 		if(FindObjectOfType<Enemy>()!=null)
@@ -38,6 +40,20 @@ public class ThrowableObjectScipt : MonoBehaviour
 
 			Destroy(gameObject, 2f);
 
+		}
+		switch(other.name)
+        {
+			case "0pt":specialRewardLevelManager.AddExp(0);
+				break;
+			case "10000pt":
+				specialRewardLevelManager.AddExp(10000);
+				break;
+			case "20000pt":
+				specialRewardLevelManager.AddExp(20000);
+				break;
+			case "30000pt":
+				specialRewardLevelManager.AddExp(30000);
+				break;
 		}
 	}
 }

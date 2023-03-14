@@ -947,6 +947,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6290ef9c43d89d4d8e758b11fda17f0, type: 3}
+--- !u!135 &1367438230 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 7097003004888609331, guid: c6290ef9c43d89d4d8e758b11fda17f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1367438229}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1483899596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1048,7 @@ GameObject:
   - component: {fileID: 1557404587}
   - component: {fileID: 1557404586}
   - component: {fileID: 1557404585}
+  - component: {fileID: 1557404589}
   m_Layer: 0
   m_Name: erw
   m_TagString: Untagged
@@ -1126,6 +1133,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1557404589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557404584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edfab560e35f238409a1142a1be20500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderXP: {fileID: 0}
+  ballCollider: {fileID: 1367438230}
 --- !u!1 &1602044852
 GameObject:
   m_ObjectHideFlags: 0
