@@ -16,6 +16,7 @@ public class MainCharacter : MonoBehaviour
     
     int maxExp;
     bool wall;
+    [SerializeField]
     float moveSpeed = 2;
 
     public string SceneName;
