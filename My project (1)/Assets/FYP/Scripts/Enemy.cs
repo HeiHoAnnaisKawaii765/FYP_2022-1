@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
             Dead();
         }
 
-       transform.position = Vector3.MoveTowards(this.transform.position, target, movingSpeed * Time.deltaTime);
+       transform.position = Vector2.MoveTowards(this.transform.position, target, movingSpeed * Time.deltaTime);
         
         if (transform.position == waypoints[n].position)
         {
