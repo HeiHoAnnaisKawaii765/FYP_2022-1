@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     public Transform[] waypoints;
     
     private Vector3 target;
-
+    [SerializeField]
     int n;
 
     // Start is called before the first frame update
@@ -49,12 +49,13 @@ public class Enemy : MonoBehaviour
             Dead();
         }
 
-       transform.position = Vector2.MoveTowards(this.transform.position, target, movingSpeed * Time.deltaTime);
+       transform.position = Vector3.MoveTowards(this.transform.position, target, movingSpeed * Time.deltaTime);
         
         if (transform.position == waypoints[n].position)
         {
             
             n += 1;
+
             if(n>=waypoints.Length)
             {
                 n = 0;
