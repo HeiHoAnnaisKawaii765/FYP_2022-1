@@ -12,6 +12,10 @@ TagManager:
   - Ground
   - Wall
   - Present
+  - 0pt
+  - 10000pt
+  - 20000pt
+  - 30000pt
   layers:
   - Default
   - TransparentFX
