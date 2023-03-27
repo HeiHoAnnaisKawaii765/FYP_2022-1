@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class LevelManager : MonoBehaviour
     public Transform WeaponSpawnLeftUP, WeaponSpawnLeftDown, WeaponSpawnRightUP, WeaponSpawnRightDown;
     public GameObject cam1, cam2, cam3, cam4;
     public Transform superWeaponSpawn;
+    [SerializeField]
+    string sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +35,10 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     if(FindObjectOfType<Enemy>()== null)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 
     void SpawnEnemy()
@@ -149,7 +155,7 @@ public class LevelManager : MonoBehaviour
     }
     #endregion
 
-    
+                        
 
 
 }
