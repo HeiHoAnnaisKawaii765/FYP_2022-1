@@ -557,11 +557,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 33
-=======
   m_RootOrder: 34
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8145426
 GameObject:
@@ -2044,12 +2040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e28e3c11b6e642a61843d4cf137cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  player: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-=======
   camMoveSpeed: 1
->>>>>>> upstream/IpShuKin
 --- !u!1 &52712120
 GameObject:
   m_ObjectHideFlags: 0
@@ -5852,27 +5843,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 5344063230332425015, guid: a6ecdc63374074e6eb42a738a5683a91,
-        type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
-=======
->>>>>>> upstream/IpShuKin
     - target: {fileID: 5896624538512305970, guid: a6ecdc63374074e6eb42a738a5683a91,
         type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 5896624538512305970, guid: a6ecdc63374074e6eb42a738a5683a91,
-        type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
-=======
->>>>>>> upstream/IpShuKin
     - target: {fileID: 6576607644387126882, guid: a6ecdc63374074e6eb42a738a5683a91,
         type: 3}
       propertyPath: m_Size.x
@@ -17238,41 +17213,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 7684154144917905345, guid: a6ecdc63374074e6eb42a738a5683a91,
-        type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 7686862898898563874, guid: a6ecdc63374074e6eb42a738a5683a91,
         type: 3}
       propertyPath: m_Layer
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7686862898898563874, guid: a6ecdc63374074e6eb42a738a5683a91,
-        type: 3}
-      propertyPath: m_TagString
-      value: Ground
-=======
-    - target: {fileID: 7686862898898563874, guid: a6ecdc63374074e6eb42a738a5683a91,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
->>>>>>> upstream/IpShuKin
       objectReference: {fileID: 0}
     - target: {fileID: 9084549537286453653, guid: a6ecdc63374074e6eb42a738a5683a91,
         type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 9084549537286453653, guid: a6ecdc63374074e6eb42a738a5683a91,
-        type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
-=======
->>>>>>> upstream/IpShuKin
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6ecdc63374074e6eb42a738a5683a91, type: 3}
 --- !u!4 &80081313 stripped
@@ -17985,11 +17935,7 @@ Transform:
   - {fileID: 759210461}
   - {fileID: 1835226128}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 32
-=======
   m_RootOrder: 33
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: -196.974, y: 568.818, z: 189.125}
 --- !u!1 &106912000
 GameObject:
@@ -20388,11 +20334,7 @@ Transform:
   - {fileID: 40810752}
   - {fileID: 1662259178}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 52
-=======
   m_RootOrder: 56
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &211556658
 GameObject:
@@ -25972,12 +25914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e28e3c11b6e642a61843d4cf137cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  player: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-=======
   camMoveSpeed: 1
->>>>>>> upstream/IpShuKin
 --- !u!1 &438324621
 GameObject:
   m_ObjectHideFlags: 0
@@ -28816,11 +28753,7 @@ Transform:
   - {fileID: 1223673201}
   - {fileID: 66190632}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 44
-=======
   m_RootOrder: 47
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &562660887
 GameObject:
@@ -30324,12 +30257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e28e3c11b6e642a61843d4cf137cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  player: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-=======
   camMoveSpeed: 1
->>>>>>> upstream/IpShuKin
 --- !u!1 &607004636
 GameObject:
   m_ObjectHideFlags: 0
@@ -31697,10 +31625,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 41
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646109636 stripped
@@ -31722,7 +31646,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.009170345, y: 0.017997691, z: 0.042445265}
   m_Center: {x: 0.0006220144, y: 0.00013683378, z: -0.006564084}
->>>>>>> upstream/IpShuKin
 --- !u!1 &647145872
 GameObject:
   m_ObjectHideFlags: 0
@@ -37337,7 +37260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 102.1, y: -8.1}
+  m_AnchoredPosition: {x: 102.1, y: 0.27137566}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &832825925
@@ -37613,11 +37536,7 @@ Transform:
   - {fileID: 1512135270}
   - {fileID: 1993111118}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 31
-=======
   m_RootOrder: 32
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: -196.974, y: 208.818, z: 189.125}
 --- !u!1001 &837848006
 PrefabInstance:
@@ -38003,11 +37922,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 42
-=======
   m_RootOrder: 45
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &858154901
 GameObject:
@@ -38663,13 +38578,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 5235766064389198839, guid: 645fa465ee039074ebf14a4686e19b15, type: 3}
   - {fileID: 591350389921798801, guid: 80679a28acd417342827abc750da59fc, type: 3}
-<<<<<<< HEAD
-  cam1: {fileID: 1080745502}
-  cam2: {fileID: 1153522431}
-  cam3: {fileID: 743635850}
-  cam4: {fileID: 2067194459}
-  superWeaponSpawn: {fileID: 949795858}
-=======
   LeftUP: {fileID: 1080745502}
   LeftDown: {fileID: 743635850}
   RightUP: {fileID: 1153522431}
@@ -38678,15 +38586,12 @@ MonoBehaviour:
   WeaponSpawnLeftDown: {fileID: 949795858}
   WeaponSpawnRightUP: {fileID: 642171864}
   WeaponSpawnRightDown: {fileID: 1365320888}
-  bombLeftUP: {fileID: 382262532778865007, guid: 29157cfd9bd4bb746be85504fb39e7f0,
-    type: 3}
-  bombLeftDown: {fileID: 3947418317205463829, guid: f8e2090787a86284a919ad720969f364,
-    type: 3}
-  bombRightUP: {fileID: 9042894999742550208, guid: 88c098fa53cb7c543880a15b1381869a,
-    type: 3}
-  bombRightDown: {fileID: 2561110754954399154, guid: 419714748db065045834a2785d116659,
-    type: 3}
->>>>>>> upstream/IpShuKin
+  cam1: {fileID: 0}
+  cam2: {fileID: 0}
+  cam3: {fileID: 0}
+  cam4: {fileID: 0}
+  superWeaponSpawn: {fileID: 0}
+  sceneName: 
 --- !u!1 &874322233
 GameObject:
   m_ObjectHideFlags: 0
@@ -40056,11 +39961,7 @@ Transform:
   - {fileID: 767542108}
   - {fileID: 1673828472}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 28
-=======
   m_RootOrder: 29
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &920809870
 GameObject:
@@ -40096,7 +39997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 204.00002, y: -101.99997}
+  m_AnchoredPosition: {x: 283.4, y: -84}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &920809872
@@ -42869,11 +42770,7 @@ Transform:
   - {fileID: 412556470}
   - {fileID: 1418515419}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 39
-=======
   m_RootOrder: 41
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: -196.974, y: 208.818, z: 189.125}
 --- !u!114 &1016665270 stripped
 MonoBehaviour:
@@ -44404,11 +44301,7 @@ Transform:
   - {fileID: 604377132}
   - {fileID: 1341792577}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 27
-=======
   m_RootOrder: 28
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1081660311
 GameObject:
@@ -44914,11 +44807,7 @@ Transform:
   - {fileID: 525332071}
   - {fileID: 329540149}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 48
-=======
   m_RootOrder: 51
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: -196.974, y: 568.818, z: 189.125}
 --- !u!1001 &1095296444
 PrefabInstance:
@@ -45751,12 +45640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e28e3c11b6e642a61843d4cf137cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  player: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-=======
   camMoveSpeed: 1
->>>>>>> upstream/IpShuKin
 --- !u!1 &1127382108
 GameObject:
   m_ObjectHideFlags: 0
@@ -46631,11 +46515,7 @@ Transform:
   - {fileID: 430541635}
   - {fileID: 125024866}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 35
-=======
   m_RootOrder: 37
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1154101420
 GameObject:
@@ -48105,11 +47985,7 @@ Transform:
   - {fileID: 79643255}
   - {fileID: 637842734}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 36
-=======
   m_RootOrder: 38
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1208986920
 GameObject:
@@ -52149,11 +52025,7 @@ Transform:
   - {fileID: 1272630856}
   - {fileID: 261226584}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 38
-=======
   m_RootOrder: 40
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: -196.974, y: 208.818, z: 189.125}
 --- !u!1 &1349501678
 GameObject:
@@ -52253,12 +52125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e28e3c11b6e642a61843d4cf137cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  player: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-=======
   camMoveSpeed: 1
->>>>>>> upstream/IpShuKin
 --- !u!1 &1350109035
 GameObject:
   m_ObjectHideFlags: 0
@@ -52888,11 +52755,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 49
-=======
   m_RootOrder: 52
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1368187848
 GameObject:
@@ -53414,8 +53277,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385325984}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1388464686 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3947418317205463829, guid: f8e2090787a86284a919ad720969f364,
@@ -53435,7 +53296,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.009170345, y: 0.017997691, z: 0.042445265}
   m_Center: {x: 0.0006220144, y: 0.00013683378, z: -0.006564084}
->>>>>>> upstream/IpShuKin
 --- !u!1 &1392700232
 GameObject:
   m_ObjectHideFlags: 0
@@ -55086,11 +54946,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 34
-=======
   m_RootOrder: 36
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444129151
 GameObject:
@@ -55915,11 +55771,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 29
-=======
   m_RootOrder: 30
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1471324893
 PrefabInstance:
@@ -57528,11 +57380,7 @@ Transform:
   - {fileID: 2000663263}
   - {fileID: 1858229597}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 30
-=======
   m_RootOrder: 31
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: -196.974, y: 208.818, z: 189.125}
 --- !u!1 &1509491095
 GameObject:
@@ -58243,11 +58091,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 53
-=======
   m_RootOrder: 57
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1535836369
 GameObject:
@@ -61793,12 +61637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e28e3c11b6e642a61843d4cf137cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  player: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-=======
   camMoveSpeed: 1
->>>>>>> upstream/IpShuKin
 --- !u!1 &1667042016
 GameObject:
   m_ObjectHideFlags: 0
@@ -64761,11 +64600,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 26
-=======
   m_RootOrder: 27
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1752148155
 GameObject:
@@ -64934,11 +64769,7 @@ Transform:
   - {fileID: 2023061667}
   - {fileID: 1165174303}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 46
-=======
   m_RootOrder: 49
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: -196.974, y: 208.818, z: 189.125}
 --- !u!1 &1760368161
 GameObject:
@@ -65352,11 +65183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 45
-=======
   m_RootOrder: 48
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1772301839
 GameObject:
@@ -66352,11 +66179,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 50
-=======
   m_RootOrder: 54
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830842470
 GameObject:
@@ -66657,11 +66480,7 @@ Transform:
   - {fileID: 1185645971}
   - {fileID: 1190970829}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 40
-=======
   m_RootOrder: 42
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: -196.974, y: 568.818, z: 189.125}
 --- !u!1 &1835226126
 GameObject:
@@ -67289,11 +67108,7 @@ Transform:
   - {fileID: 884235138}
   - {fileID: 1304558957}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 47
-=======
   m_RootOrder: 50
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: -196.974, y: 208.818, z: 189.125}
 --- !u!1 &1857962878
 GameObject:
@@ -70288,11 +70103,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 37
-=======
   m_RootOrder: 39
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1966386577
 GameObject:
@@ -72906,11 +72717,7 @@ Transform:
   - {fileID: 1349501679}
   - {fileID: 1417732582}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 43
-=======
   m_RootOrder: 46
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070842657
 GameObject:
@@ -73597,11 +73404,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65af15b6002e2224090fc1516f011af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
   Start: {fileID: 0}
   SceneName: 
->>>>>>> upstream/IpShuKin
 --- !u!4 &2087178120
 Transform:
   m_ObjectHideFlags: 0
@@ -73614,11 +73418,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 51
-=======
   m_RootOrder: 55
->>>>>>> upstream/IpShuKin
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2088557659
 GameObject:
@@ -74195,12 +73995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e28e3c11b6e642a61843d4cf137cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  player: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-=======
   camMoveSpeed: 1
->>>>>>> upstream/IpShuKin
 --- !u!1 &2103671294
 GameObject:
   m_ObjectHideFlags: 0
@@ -89929,7 +89724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103, y: -23}
+  m_AnchoredPosition: {x: 182.4, y: -19}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2142638119356031429
@@ -90130,7 +89925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9.199951, y: -20.799927}
+  m_AnchoredPosition: {x: 88.599976, y: -8.799988}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &3422705908964669074
@@ -90468,7 +90263,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 72.00003, y: -94.89998}
+  m_AnchoredPosition: {x: 151.4, y: -82.9}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &6102045131545264618
