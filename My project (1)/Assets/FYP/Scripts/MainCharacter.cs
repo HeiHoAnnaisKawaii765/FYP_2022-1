@@ -67,7 +67,7 @@ public class MainCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(this.transform.position, wayPt, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(this.transform.position, wayPt, moveSpeed * Time.deltaTime);
 
 
         if (FindObjectOfType<Enemy>() != null)
