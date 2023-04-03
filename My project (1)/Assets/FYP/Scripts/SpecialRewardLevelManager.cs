@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class SpecialRewardLevelManager : MonoBehaviour
 {
     int currentLV;
@@ -10,6 +10,8 @@ public class SpecialRewardLevelManager : MonoBehaviour
     public Slider sliderXP;
 
     public Collider ballCollider;
+    
+
     
    
     // Start is called before the first frame update
@@ -28,6 +30,7 @@ public class SpecialRewardLevelManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("EXP", currentXP);
         PlayerPrefs.SetInt("LV", currentLV);
+        SceneManager.LoadScene("Level Select");
     }
     private void OnTriggerEnter(Collider other)
     {
