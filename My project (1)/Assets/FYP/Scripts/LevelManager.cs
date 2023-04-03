@@ -17,8 +17,10 @@ public class LevelManager : MonoBehaviour
     public Transform WeaponSpawnLeftUP, WeaponSpawnLeftDown, WeaponSpawnRightUP, WeaponSpawnRightDown;
     public GameObject cam1, cam2, cam3, cam4;
     public Transform superWeaponSpawn;
+
     
     string[] sceneName = { "Special Reward Scene Type 2", "Special Reward Scene Type 3", "Special Reward Scene" };
+
     // Start is called before the first frame update
     void Start()
     {

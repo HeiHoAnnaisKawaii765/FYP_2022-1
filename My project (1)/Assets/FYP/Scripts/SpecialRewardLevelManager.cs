@@ -11,6 +11,8 @@ public class SpecialRewardLevelManager : MonoBehaviour
 
     public Collider ballCollider;
     
+
+    
    
     // Start is called before the first frame update
     void Start()
