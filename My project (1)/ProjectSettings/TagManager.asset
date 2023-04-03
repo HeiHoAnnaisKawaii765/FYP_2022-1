@@ -16,6 +16,7 @@ TagManager:
   - 10000pt
   - 20000pt
   - 30000pt
+  - Touch
   layers:
   - Default
   - TransparentFX

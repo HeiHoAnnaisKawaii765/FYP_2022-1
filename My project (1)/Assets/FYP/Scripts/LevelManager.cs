@@ -17,8 +17,8 @@ public class LevelManager : MonoBehaviour
     public Transform WeaponSpawnLeftUP, WeaponSpawnLeftDown, WeaponSpawnRightUP, WeaponSpawnRightDown;
     public GameObject cam1, cam2, cam3, cam4;
     public Transform superWeaponSpawn;
-    [SerializeField]
-    string sceneName;
+    
+    string[] sceneName = { "Special Reward Scene Type 2", "Special Reward Scene Type 3", "Special Reward Scene" };
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +37,7 @@ public class LevelManager : MonoBehaviour
     {
      if(FindObjectOfType<Enemy>()== null)
         {
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene(sceneName[Random.Range(0,sceneName.Length)]);
         }
     }
 
