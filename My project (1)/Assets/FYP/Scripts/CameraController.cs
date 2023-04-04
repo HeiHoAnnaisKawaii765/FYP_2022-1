@@ -13,21 +13,41 @@ public class CameraController : MonoBehaviour
     {
         if(controlling)
         {
-            theMainCamera.transform.position = new Vector3(controllingHand.transform.position.x, controllingHand.transform.position.y, 0);
+           
+            if(controllingHand.transform.position.x < theMainCamera.transform.position.x -1.3)
+            {
+                theMainCamera.transform.position += 10 * Time.deltaTime * Vector3.right * -1;
+            }
+            else
+            {
+                theMainCamera.transform.position += 10 * Time.deltaTime * Vector3.right * 1;
+            }
+
+            if (controllingHand.transform.position.y < theMainCamera.transform.position.y- 3)
+            {
+                theMainCamera.transform.position += 10 * Time.deltaTime * Vector3.up * -1;
+            }
+            else
+            {
+                theMainCamera.transform.position += 10 * Time.deltaTime * Vector3.up * 1;
+            }
+
         }
+        
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Touch")
-        {
-            controlling = true;
-        }
-    }
+    
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Touch")
         {
             controlling = false;
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Touch")
+        {
+            controlling = true;
         }
     }
 
