@@ -14,7 +14,7 @@ public void NextScene()
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
-    public void OnClickSceneChange()
+    public void OnClickSceneChange(string loadSceneName)
     {
         //int Sceneindex = SceneManager.GetActiveScene().buildIndex;
         //if (Sceneindex != SceneManager.sceneCount)
