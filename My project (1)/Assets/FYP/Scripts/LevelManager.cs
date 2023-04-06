@@ -37,7 +37,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if(FindObjectOfType<Enemy>()== null)
+     if(FindObjectOfType<Enemy>()== null && FindObjectOfType<BossScript>() == null)
         {
             SceneManager.LoadScene(sceneName[Random.Range(0,sceneName.Length)]);
         }

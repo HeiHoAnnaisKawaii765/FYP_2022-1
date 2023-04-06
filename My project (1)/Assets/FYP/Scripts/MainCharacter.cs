@@ -70,9 +70,17 @@ public class MainCharacter : MonoBehaviour
         transform.position = Vector3.MoveTowards(this.transform.position, wayPt, moveSpeed * Time.deltaTime);
 
 
-        if (FindObjectOfType<Enemy>() != null)
+        if (FindObjectOfType<Enemy>() != null || FindObjectOfType<BossScript>() != null)
         {
-            target = FindObjectOfType<Enemy>().gameObject;
+            if(FindObjectOfType<Enemy>() != null)
+            {
+                target = FindObjectOfType<Enemy>().gameObject;
+            }
+            else
+            {
+                target = FindObjectOfType<BossScript>().gameObject;
+            }
+            
             
             if (transform.position == waypoints[n].position)
             {
@@ -96,8 +104,7 @@ public class MainCharacter : MonoBehaviour
 
         if (hp <= 0)
         {
-            SceneManager.LoadScene(SceneName);
-            //Destroy(gameObject);
+           
 
         }
         

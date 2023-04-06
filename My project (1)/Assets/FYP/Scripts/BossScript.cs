@@ -9,7 +9,7 @@ public class BossScript : MonoBehaviour
     public int def = 1;
     MainCharacter mc;
     public float attackRate = 5;
-    private float nextAttack;
+    private float nextAttack,nextTP;
 
     public GameObject player;
     public GameObject deathEffect;
@@ -41,14 +41,18 @@ public class BossScript : MonoBehaviour
         touched = false;
         mc = FindObjectOfType<MainCharacter>();
         nextAttack = Time.time;
+        nextTP = Time.time;
         target = waypoints[n].position;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        //player =  FindObjectOfType<MainCharacter>().gameObject;
+        if(Time.time > nextTP)
+        {
+            ResetPosition();
+            nextTP = Time.time + teleportTime;
+        }        
 
         if (HP <= 0)
         {

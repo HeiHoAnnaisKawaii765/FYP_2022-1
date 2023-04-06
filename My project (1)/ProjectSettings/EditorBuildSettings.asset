@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FYP/Scenes/Gameover.unity
     guid: 29ec72405c178894c83416cbf540e02d
+  - enabled: 1
+    path: Assets/FYP/Scenes/Special Reward Scene Type 2.unity
+    guid: 536257cdd7ee3e441b079955fc8b92d1
+  - enabled: 1
+    path: Assets/FYP/Scenes/Special Reward Scene Type 3.unity
+    guid: 232d8977d9aa7cc4a833193173a20e91
+  - enabled: 1
+    path: Assets/FYP/Scenes/Special Reward Scene.unity
+    guid: 0cdbeba94b4ac0e42984c6c35d8279bc
   m_configObjects: {}
