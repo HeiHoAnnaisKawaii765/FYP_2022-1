@@ -8688,7 +8688,6 @@ MonoBehaviour:
   cam3: {fileID: 0}
   cam4: {fileID: 0}
   superWeaponSpawn: {fileID: 0}
-  sceneName: 
 --- !u!1 &874322233
 GameObject:
   m_ObjectHideFlags: 0
