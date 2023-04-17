@@ -19,7 +19,7 @@ public void NextScene()
         //int Sceneindex = SceneManager.GetActiveScene().buildIndex;
         //if (Sceneindex != SceneManager.sceneCount)
         {
-            SceneManager.LoadScene(SceneName);
+            SceneManager.LoadScene(loadSceneName);
         }
     }
 

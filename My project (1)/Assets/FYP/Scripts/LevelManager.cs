@@ -30,14 +30,15 @@ public class LevelManager : MonoBehaviour
         objectslection = 0;
         wave = 1;
         
-        superWeaponSpawn = cam1.transform;
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-     if(FindObjectOfType<Enemy>()== null && FindObjectOfType<BossScript>() == null)
+        //superWeaponSpawn = cam1.transform;
+        if (FindObjectOfType<Enemy>()== null && FindObjectOfType<BossScript>() == null)
         {
             SceneManager.LoadScene(sceneName[Random.Range(0,sceneName.Length)]);
         }
