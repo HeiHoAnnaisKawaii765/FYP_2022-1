@@ -43,14 +43,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    void SpawnEnemy()
-    {
-        for(int i = 0; i <= enemyValue; i ++)
-        {
-            Instantiate(enemyPrefabs[wave - 1], spawnPoints[i]);
-        }
-    }
-    
+
 
     public void DeployObject()
     {
