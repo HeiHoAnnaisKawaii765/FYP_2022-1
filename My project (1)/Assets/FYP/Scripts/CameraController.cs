@@ -36,6 +36,7 @@ public class CameraController : MonoBehaviour
         
     }
     
+    
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Touch")
@@ -50,5 +51,11 @@ public class CameraController : MonoBehaviour
             controlling = true;
         }
     }
-
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Touch")
+        {
+            controlling = true;
+        }
+    }
 }
