@@ -13,6 +13,7 @@ public class BulletsController : MonoBehaviour
     Enemy target;
     MainCharacter mc;
     Vector2 moveDirection;
+    BossScript boss;
     public string ownerTag = "Player";
 
     public int type = 1;
@@ -24,6 +25,7 @@ public class BulletsController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindObjectOfType<Enemy>();
         mc = FindObjectOfType<MainCharacter>();
+        boss = FindObjectOfType<BossScript>();
         switch(type)
         {
             case 1:
@@ -34,6 +36,11 @@ public class BulletsController : MonoBehaviour
                 moveDirection = (mc.transform.position - transform.position).normalized * moveSpeed;
                 rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
                 break;
+            case 3:
+                moveDirection = (mc.transform.position - transform.position).normalized * moveSpeed;
+                rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
+                break;
+
         }
 
         

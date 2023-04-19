@@ -166,11 +166,12 @@ public class MainCharacter : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Axe")
+        if(other.tag == "Axe"||other.tag == "Arrow")
         {
             hp -= woundedhealth;
 
         }
+
         if(other.tag == "Wall")
         {
             gameObject.transform.position = new Vector3(24.61f,-1.67f,0f);
