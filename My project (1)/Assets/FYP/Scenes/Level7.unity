@@ -2591,7 +2591,7 @@ PrefabInstance:
     - target: {fileID: 8263314628175513647, guid: cb2cf16c3ac2a8b4286c5d6a6f2ca11c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8263314628175513647, guid: cb2cf16c3ac2a8b4286c5d6a6f2ca11c,
         type: 3}
@@ -3587,6 +3587,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0d20c14bcd878a649bc83602f6d221c1,
         type: 3}
+    - target: {fileID: 1339071706044910227, guid: 972d2b7228742914297aa911044e4174,
+        type: 3}
+      propertyPath: woundedhealth
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1339071706044910227, guid: 972d2b7228742914297aa911044e4174,
         type: 3}
       propertyPath: waypoints.Array.size

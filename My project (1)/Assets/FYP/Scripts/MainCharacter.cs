@@ -13,7 +13,10 @@ public class MainCharacter : MonoBehaviour
     public int exp = 0;
     public int lv = 1;
     public int atk = 25;
-    
+
+    [SerializeField]
+    int woundedhealth;
+
     int maxExp;
     bool wall;
     [SerializeField]
@@ -165,7 +168,7 @@ public class MainCharacter : MonoBehaviour
     {
         if(other.tag == "Axe")
         {
-            hp -= FindObjectOfType<Enemy>().atk * (1 / lv);
+            hp -= woundedhealth;
 
         }
         if(other.tag == "Wall")
