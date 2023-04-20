@@ -8,13 +8,18 @@ public class CameraController : MonoBehaviour
     GameObject theMainCamera,controllingHand;
     [SerializeField]
     bool controlling;
+    [SerializeField]
+    Camera cam;
+    [SerializeField]
+    float upBorder, downBorder, leftBorder, rightBorder;
     // Start is called before the first frame update
     private void Update()
     {
-        if(controlling)
+        Vector3 screenPos = cam.WorldToScreenPoint(controllingHand.transform.position);
+        if (controlling)
         {
            
-            if(controllingHand.transform.position.x < theMainCamera.transform.position.x -1.3)
+            if (screenPos.x < controllingHand.transform.position.x+ 1035)
             {
                 theMainCamera.transform.position += 10 * Time.deltaTime * Vector3.right * -1;
             }
@@ -23,7 +28,7 @@ public class CameraController : MonoBehaviour
                 theMainCamera.transform.position += 10 * Time.deltaTime * Vector3.right * 1;
             }
 
-            if (controllingHand.transform.position.y < theMainCamera.transform.position.y- 3)
+            if (screenPos.y < controllingHand.transform.position.y+ 500)
             {
                 theMainCamera.transform.position += 10 * Time.deltaTime * Vector3.up * -1;
             }
@@ -33,6 +38,11 @@ public class CameraController : MonoBehaviour
             }
 
         }
+        if(theMainCamera.transform.position.x<leftBorder|| theMainCamera.transform.position.x >rightBorder || theMainCamera.transform.position.y < downBorder || theMainCamera.transform.position.y>upBorder)
+        {
+            //theMainCamera.transform.position = new Vector2(3.38f, 4.86f);
+        }
+
         
     }
     
