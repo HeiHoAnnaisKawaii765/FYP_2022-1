@@ -99,16 +99,16 @@ public class MainCharacter : MonoBehaviour
         else
         {
             wayPt = FinalPos.position;
-            //PlayerPrefs.SetInt("EXP", exp);
-            //PlayerPrefs.SetInt("LV", lv);
+            PlayerPrefs.SetInt("EXP", exp);
+            PlayerPrefs.SetInt("LV", lv);
             
         }
 
 
         if (hp <= 0)
         {
-           
 
+            SceneManager.LoadScene("Gameover");
         }
         
 
@@ -152,7 +152,7 @@ public class MainCharacter : MonoBehaviour
     {
         
 
-            hp -= atkvalue;
+            hp -= atkvalue * 1/(lv+2);
             
 
             

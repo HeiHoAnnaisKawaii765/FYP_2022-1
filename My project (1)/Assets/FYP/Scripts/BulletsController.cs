@@ -29,8 +29,17 @@ public class BulletsController : MonoBehaviour
         switch(type)
         {
             case 1:
-                moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
-                rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
+                if(boss != null)
+                {
+                    moveDirection = (boss.transform.position - transform.position).normalized * moveSpeed;
+                    rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
+                }
+                else
+                {
+                    moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
+                    rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
+                }
+                
                 break;
             case 2:
                 moveDirection = (mc.transform.position - transform.position).normalized * moveSpeed;

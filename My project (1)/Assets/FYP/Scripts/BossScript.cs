@@ -14,7 +14,7 @@ public class BossScript : MonoBehaviour
     public GameObject player;
     public GameObject deathEffect;
 
-    float atkRange = 3;
+    float atkRange = 10;
     public float movingSpeed = 2;
 
     public bool touched;
@@ -39,7 +39,7 @@ public class BossScript : MonoBehaviour
     {
         n = 0;
         touched = false;
-        mc = FindObjectOfType<MainCharacter>();
+        
         nextAttack = Time.time;
         nextTP = Time.time;
         target = waypoints[n].position;
@@ -48,7 +48,8 @@ public class BossScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > nextTP)
+        mc = FindObjectOfType<MainCharacter>();
+        if (Time.time > nextTP)
         {
             ResetPosition();
             nextTP = Time.time + teleportTime;
