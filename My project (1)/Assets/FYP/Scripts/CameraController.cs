@@ -38,10 +38,15 @@ public class CameraController : MonoBehaviour
             }
 
         }
-        if(theMainCamera.transform.position.x<leftBorder|| theMainCamera.transform.position.x >rightBorder || theMainCamera.transform.position.y < downBorder || theMainCamera.transform.position.y>upBorder)
+        if(theMainCamera.transform.position.x<leftBorder|| theMainCamera.transform.position.x >rightBorder)
         {
-            theMainCamera.transform.position = new Vector2(3.38f, 4.86f);
+            theMainCamera.transform.position = new Vector2(0f, 4.86f);
         }
+        if (theMainCamera.transform.position.y < downBorder || theMainCamera.transform.position.y > upBorder)
+        {
+            theMainCamera.transform.position = new Vector2(3.38f, 0f);
+        }
+
 
         
     }
