@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public int HP = 100;
@@ -22,7 +22,8 @@ public class Enemy : MonoBehaviour
     public GameObject weapon;
 
     public Transform[] waypoints;
-    
+    [SerializeField]
+    Slider healthBar;
     private Vector3 target;
     [SerializeField]
     int n;
@@ -35,6 +36,7 @@ public class Enemy : MonoBehaviour
         mc = FindObjectOfType<MainCharacter>();
         nextAttack = Time.time;
         target = waypoints[n].position;
+        healthBar.maxValue = HP;
     }
 
     // Update is called once per frame
@@ -42,7 +44,7 @@ public class Enemy : MonoBehaviour
     {
 
         //player =  FindObjectOfType<MainCharacter>().gameObject;
-
+        healthBar.value = HP;
         if (HP <= 0)
         {
             mc.AddExp();

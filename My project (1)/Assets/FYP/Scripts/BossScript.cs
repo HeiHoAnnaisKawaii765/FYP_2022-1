@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class BossScript : MonoBehaviour
 {
     public int HP = 100;
@@ -30,11 +30,11 @@ public class BossScript : MonoBehaviour
     [SerializeField]
     float teleportTime;
 
+    [SerializeField]
+    Slider healthNar;
+
     // Start is called before the first frame update
-    private void Awake()
-    {
-        InvokeRepeating("RestPosition",teleportTime,teleportTime);
-    }
+    
     void Start()
     {
         n = 0;
@@ -43,11 +43,13 @@ public class BossScript : MonoBehaviour
         nextAttack = Time.time;
         nextTP = Time.time;
         target = waypoints[n].position;
+        healthNar.maxValue = HP;
     }
 
     // Update is called once per frame
     void Update()
     {
+        healthNar.value = HP;    
         mc = FindObjectOfType<MainCharacter>();
         if (Time.time > nextTP)
         {

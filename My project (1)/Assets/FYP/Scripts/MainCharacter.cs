@@ -108,7 +108,7 @@ public class MainCharacter : MonoBehaviour
         if (hp <= 0)
         {
 
-            SceneManager.LoadScene("Gameover");
+            Destroy(gameObject);
         }
         
 

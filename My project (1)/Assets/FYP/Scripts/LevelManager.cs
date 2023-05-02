@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
@@ -15,32 +16,58 @@ public class LevelManager : MonoBehaviour
     Vector3 worldPosition;
     public GameObject LeftUP, LeftDown, RightUP, RightDown;
     public Transform WeaponSpawnLeftUP, WeaponSpawnLeftDown, WeaponSpawnRightUP, WeaponSpawnRightDown;
-    public GameObject cam1, cam2, cam3, cam4;
+    public GameObject cam1, cam2, cam3, cam4, WLT, timeTXT;
     public Transform superWeaponSpawn;
-
+    [SerializeField]
+    TMP_Text WinLoseText,timeText;
+    [SerializeField]
+    bool bossLevel;
+    [SerializeField]
+    float timeLimit;
     
     string[] sceneName = { "Special Reward Scene Type 2", "Special Reward Scene Type 3", "Special Reward Scene" };
 
     // Start is called before the first frame update
+    
     void Start()
     {
-        LeftDown.SetActive(false);
-        RightUP.SetActive(false);
-        RightDown.SetActive(false);
-        objectslection = 0;
-        wave = 1;
-        
-        
+
+        timeTXT.SetActive(false);
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         //superWeaponSpawn = cam1.transform;
         if (FindObjectOfType<Enemy>()== null && FindObjectOfType<BossScript>() == null)
         {
-            SceneManager.LoadScene(sceneName[Random.Range(0,sceneName.Length)]);
+           
+            WinLoseText.text = "You Win";
+            StartCoroutine("WinLevel");
+        }
+        else if(FindObjectOfType<MainCharacter>()==null)
+        {
+            WinLoseText.text = "You lose";
+            StartCoroutine("LoseLevel");
+        }
+        else
+        {
+            WinLoseText.text = "Help the wizard to win the fight!";
+            
+        }
+        if(bossLevel)
+        {
+            timeTXT.SetActive(true);
+            timeLimit -= Time.deltaTime;
+            timeText.text = "Time" + timeLimit.ToString();
+            if (timeLimit <=0)
+            {
+                WinLoseText.text = "You lose";
+                StartCoroutine("LoseLevel");
+            }
         }
     }
 
@@ -150,8 +177,19 @@ public class LevelManager : MonoBehaviour
         DeployObject();
     }
     #endregion
+    IEnumerator WinLevel()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(sceneName[Random.Range(0, sceneName.Length)]);
+    }
 
-                        
+    IEnumerator LoseLevel()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Gameover");
+    }
+
+
 
 
 }

@@ -12,6 +12,8 @@ public class CameraController : MonoBehaviour
     Camera cam;
     [SerializeField]
     float upBorder, downBorder, leftBorder, rightBorder;
+    [SerializeField]
+    Transform cenPos;
     // Start is called before the first frame update
     private void Update()
     {
@@ -40,11 +42,11 @@ public class CameraController : MonoBehaviour
         }
         if(theMainCamera.transform.position.x<leftBorder|| theMainCamera.transform.position.x >rightBorder)
         {
-            theMainCamera.transform.position = new Vector2(0f, 4.86f);
+            theMainCamera.transform.position = new Vector2(cenPos.position.x, this.transform.position.y);
         }
         if (theMainCamera.transform.position.y < downBorder || theMainCamera.transform.position.y > upBorder)
         {
-            theMainCamera.transform.position = new Vector2(3.38f, 0f);
+            theMainCamera.transform.position = new Vector2(cenPos.position.x,cenPos.position.y );
         }
 
 
