@@ -21,7 +21,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     TMP_Text WinLoseText,timeText;
     [SerializeField]
-    bool bossLevel;
+    bool bossLevel,tutorial;
     [SerializeField]
     float timeLimit;
     
@@ -44,9 +44,16 @@ public class LevelManager : MonoBehaviour
         //superWeaponSpawn = cam1.transform;
         if (FindObjectOfType<Enemy>()== null && FindObjectOfType<BossScript>() == null)
         {
-           
-            WinLoseText.text = "You Win";
-            StartCoroutine("WinLevel");
+           if(tutorial)
+            {
+                GameObject enemy = Instantiate(enemyPrefabs[0], spawnPoints[Random.Range( 0, spawnPoints.Length)]);
+            }
+           else
+            {
+                WinLoseText.text = "You Win";
+                StartCoroutine("WinLevel");
+            }
+            
         }
         else if(FindObjectOfType<MainCharacter>()==null)
         {

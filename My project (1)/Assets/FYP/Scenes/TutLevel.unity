@@ -8999,6 +8999,7 @@ MonoBehaviour:
   WinLoseText: {fileID: 0}
   timeText: {fileID: 0}
   bossLevel: 0
+  tutorial: 0
   timeLimit: 0
 --- !u!1 &874322233
 GameObject:

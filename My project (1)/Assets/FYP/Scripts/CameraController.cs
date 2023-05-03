@@ -42,11 +42,11 @@ public class CameraController : MonoBehaviour
         }
         if(theMainCamera.transform.position.x<leftBorder|| theMainCamera.transform.position.x >rightBorder)
         {
-            theMainCamera.transform.position = new Vector2(cenPos.position.x, this.transform.position.y);
+            theMainCamera.transform.position = cenPos.position;
         }
         if (theMainCamera.transform.position.y < downBorder || theMainCamera.transform.position.y > upBorder)
         {
-            theMainCamera.transform.position = new Vector2(cenPos.position.x,cenPos.position.y );
+            theMainCamera.transform.position = cenPos.position;
         }
 
 
