@@ -4451,10 +4451,10 @@ MonoBehaviour:
   controllingHand: {fileID: 255659167}
   controlling: 0
   cam: {fileID: 1227192571}
-  upBorder: 10.25
-  downBorder: 2.7
-  leftBorder: -2.49
-  rightBorder: 11.76
+  upBorder: 13.44
+  downBorder: -1.36
+  leftBorder: -4.38
+  rightBorder: 14.34
   cenPos: {fileID: 211083626}
 --- !u!65 &255659171
 BoxCollider:
@@ -24402,6 +24402,7 @@ MonoBehaviour:
   WinLoseText: {fileID: 1494023010}
   timeText: {fileID: 0}
   bossLevel: 0
+  tutorial: 0
   timeLimit: 0
 --- !u!4 &1524465707
 Transform:

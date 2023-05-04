@@ -1828,6 +1828,7 @@ MonoBehaviour:
   downBorder: 2.77
   leftBorder: -0.87
   rightBorder: 10.17
+  cenPos: {fileID: 1837886568}
 --- !u!54 &154756941
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6385,6 +6386,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4422176543485437723, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -9430,8 +9436,13 @@ MonoBehaviour:
   cam3: {fileID: 0}
   cam4: {fileID: 0}
   WLT: {fileID: 1389678647}
+  timeTXT: {fileID: 0}
   superWeaponSpawn: {fileID: 0}
   WinLoseText: {fileID: 1731337310}
+  timeText: {fileID: 0}
+  bossLevel: 0
+  tutorial: 0
+  timeLimit: 0
 --- !u!1 &874322233
 GameObject:
   m_ObjectHideFlags: 0
@@ -10570,6 +10581,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4422176543485437723, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -12920,6 +12936,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4422176543485437723, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -18603,6 +18624,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4422176543485437723, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -19240,6 +19266,36 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+--- !u!1 &1837886567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1837886568}
+  m_Layer: 0
+  m_Name: CenPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1837886568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837886567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5, y: 2.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1850498019
 GameObject:
   m_ObjectHideFlags: 0

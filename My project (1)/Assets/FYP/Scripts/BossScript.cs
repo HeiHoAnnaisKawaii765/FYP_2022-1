@@ -91,7 +91,7 @@ public class BossScript : MonoBehaviour
     {
         if (other.tag == "Bullet")
         {
-            HP -= mc.atk * (1 / def);
+            HP -= mc.atk;
         }
 
 

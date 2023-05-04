@@ -6551,6 +6551,7 @@ MonoBehaviour:
   WinLoseText: {fileID: 330731386}
   timeText: {fileID: 0}
   bossLevel: 0
+  tutorial: 0
   timeLimit: 0
 --- !u!4 &430204513
 Transform:
@@ -14078,10 +14079,10 @@ MonoBehaviour:
   controllingHand: {fileID: 917496972}
   controlling: 0
   cam: {fileID: 933946623}
-  upBorder: 13.52
-  downBorder: 1.7
-  leftBorder: -3
-  rightBorder: 23.21
+  upBorder: 6.8
+  downBorder: 0.6
+  leftBorder: -3.82
+  rightBorder: 28.73
   cenPos: {fileID: 1481873396}
 --- !u!65 &917496976
 BoxCollider:
@@ -17425,7 +17426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108687922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.53, y: 0.68, z: 0}
+  m_LocalPosition: {x: 3.53, y: 2.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23417,7 +23418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481873395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.83, y: 0.77, z: 0}
+  m_LocalPosition: {x: 6.83, y: 2.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

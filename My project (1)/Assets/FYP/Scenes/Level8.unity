@@ -8285,6 +8285,7 @@ MonoBehaviour:
   WinLoseText: {fileID: 1367538244}
   timeText: {fileID: 0}
   bossLevel: 0
+  tutorial: 0
   timeLimit: 0
 --- !u!4 &517553206
 Transform:

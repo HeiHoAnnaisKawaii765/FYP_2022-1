@@ -31,8 +31,11 @@ public class LevelManager : MonoBehaviour
     
     void Start()
     {
-
-        timeTXT.SetActive(false);
+        if(timeTXT!=null)
+        {
+            timeTXT.SetActive(false);
+        }
+        
 
 
     }
