@@ -24,11 +24,13 @@ public class LevelManager : MonoBehaviour
     bool bossLevel,tutorial;
     [SerializeField]
     float timeLimit;
-    
+    [SerializeField]
+    string[] endgameDialog;
     string[] sceneName = { "Special Reward Scene Type 2", "Special Reward Scene Type 3", "Special Reward Scene" };
+    int n = 0;
 
     // Start is called before the first frame update
-    
+
     void Start()
     {
         if(timeTXT!=null)
@@ -50,6 +52,12 @@ public class LevelManager : MonoBehaviour
            if(tutorial)
             {
                 GameObject enemy = Instantiate(enemyPrefabs[0], spawnPoints[Random.Range( 0, spawnPoints.Length)]);
+            }
+           else if(bossLevel)
+            {
+                WinLoseText.text = endgameDialog[n];
+                StartCoroutine("BossWinLevel");
+                
             }
            else
             {
@@ -75,7 +83,7 @@ public class LevelManager : MonoBehaviour
             timeText.text = "Time" + timeLimit.ToString();
             if (timeLimit <=0)
             {
-                WinLoseText.text = "You lose";
+                WinLoseText.text = "The great time war begins,is over";
                 StartCoroutine("LoseLevel");
             }
         }
@@ -91,102 +99,8 @@ public class LevelManager : MonoBehaviour
 
 
     }
-    #region BTN
-    public void selectNone ()
-    {
-        objectslection = 0;
-    }
-    public void O1()
-    {
-        objectslection = 1;
-    }
-    public void O2()
-    {
-        objectslection = 2;
-    }
-    public void O3()
-    {
-        objectslection = 3;
-    }
-    public void O4()
-    {
-        objectslection = 4;
-    }
-    public void O5()
-    {
-        objectslection = 5;
-    }
-    public void LeftUP_On()
-    {
-
-        cam1.SetActive(true);
-        cam2.SetActive(false);
-        cam3.SetActive(false);
-        cam4.SetActive(false);
-        superWeaponSpawn = cam1.transform;
-
-        LeftUP.SetActive(true);
-        LeftDown.SetActive(false);
-        RightUP.SetActive(false);
-        RightDown.SetActive(false);
-
-
-    }
-    public void LeftDown_ON()
-    {
-
-        cam1.SetActive(false);
-        cam1.SetActive(true);
-        cam3.SetActive(false);
-        cam4.SetActive(false);
-        superWeaponSpawn = cam2.transform;
-
-        
-
-
-    }
-    public void RightUP_ON()
-    {
-
-        cam1.SetActive(false);
-        cam2.SetActive(false);
-        cam3.SetActive(true);
-        cam4.SetActive(false);
-        superWeaponSpawn = cam3.transform;
-
-
-
-    }
-    public void RightDown_ON()
-    {
-
-        cam1.SetActive(false);
-        cam2.SetActive(false);
-        cam3.SetActive(false);
-        cam4.SetActive(true);
-        superWeaponSpawn = cam4.transform;
-
-
-    }
-
-    public void SpawnBombLeftUP()
-    {
-        DeployObject();
-    }
-
-    public void SpawnBombLeftDown()
-    {
-        DeployObject();
-    }
-    public void SpawnBombRightUP()
-    {
-        DeployObject();
-    }
-    public void SpawnBombRightDown()
-    {
-        DeployObject();
-    }
-    #endregion
+    
+  
     IEnumerator WinLevel()
     {
         yield return new WaitForSeconds(3);
@@ -199,7 +113,19 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene("Gameover");
     }
 
-
+    IEnumerator BossWinLevel()
+    {
+        
+        
+        for (int i = 0; i <= endgameDialog.Length; i++)
+        {
+            n = i;
+            
+            yield return new WaitForSeconds(2);
+            
+        }
+        SceneManager.LoadScene("Main Menu");
+    }
 
 
 }

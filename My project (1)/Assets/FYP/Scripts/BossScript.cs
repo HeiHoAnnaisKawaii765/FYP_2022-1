@@ -59,7 +59,7 @@ public class BossScript : MonoBehaviour
 
         if (HP <= 0)
         {
-            mc.AddExp();
+            Destroy(this);
             
         }
 

@@ -15,7 +15,7 @@ public class MainCharacter : MonoBehaviour
     public int atk = 25;
 
     [SerializeField]
-    int woundedhealth;
+    int woundedhealth,addExp;
 
     int maxExp;
     bool wall;
@@ -145,7 +145,7 @@ public class MainCharacter : MonoBehaviour
     
     public void AddExp()
     {
-        exp += 20;
+        exp += addExp;
     }
 
     public void GetHurt(int atkvalue)

@@ -7123,6 +7123,11 @@ PrefabInstance:
       objectReference: {fileID: 9009421492526186300}
     - target: {fileID: 1339071706044910227, guid: 972d2b7228742914297aa911044e4174,
         type: 3}
+      propertyPath: FinalPos
+      value: 
+      objectReference: {fileID: 1828648182}
+    - target: {fileID: 1339071706044910227, guid: 972d2b7228742914297aa911044e4174,
+        type: 3}
       propertyPath: hpSlider
       value: 
       objectReference: {fileID: 5345690494632668975}
@@ -18992,7 +18997,15 @@ MonoBehaviour:
   WinLoseText: {fileID: 133451261}
   timeText: {fileID: 1793386440}
   bossLevel: 1
+  tutorial: 0
   timeLimit: 60
+  endgameDialog:
+  - Why every time you all needs to stop me?
+  - You think you are right on stopping me?
+  - One day, all of you here...
+  - All of you here will understand why I am doing this
+  - You will all regret for stopping me!
+  - Congrats, you are able to stop the war
 --- !u!4 &1099580661
 Transform:
   m_ObjectHideFlags: 0
