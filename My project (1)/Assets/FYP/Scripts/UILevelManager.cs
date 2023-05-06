@@ -6,10 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class UILevelManager : MonoBehaviour
 {
-    public Button Start;
+    public Button St;
     public string SceneName;
-    string bossLevelTicket = PlayerPrefs.GetString("L9");
-public void NextScene()
+    string bossLevelTicket;
+    [SerializeField]
+    GameObject textOfReminder;
+    private void Start()
+    {
+        if(textOfReminder!= null)
+        {
+            textOfReminder.SetActive(false);
+        }
+        bossLevelTicket = PlayerPrefs.GetString("L9");
+    }
+    public void NextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
@@ -27,7 +37,7 @@ public void NextScene()
                 }
                 else
                 {
-                    //remind player finish L9 first
+                    textOfReminder.SetActive(true);
                 }
             }
             else

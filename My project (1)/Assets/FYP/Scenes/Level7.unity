@@ -6529,7 +6529,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 5129928519325876327, guid: bda9481d6f1ede04084e8ef9588b955d, type: 3}
   deplyableObjects:
-  - {fileID: 0}
+  - {fileID: 3773145639043530099, guid: 58393132c96e00b42ae8e6a3a25a48a2, type: 3}
   - {fileID: 5235766064389198839, guid: 645fa465ee039074ebf14a4686e19b15, type: 3}
   - {fileID: 591350389921798801, guid: 80679a28acd417342827abc750da59fc, type: 3}
   LeftUP: {fileID: 575569209}
@@ -6552,7 +6552,9 @@ MonoBehaviour:
   timeText: {fileID: 0}
   bossLevel: 0
   tutorial: 0
+  L9: 0
   timeLimit: 0
+  endgameDialog: []
 --- !u!4 &430204513
 Transform:
   m_ObjectHideFlags: 0

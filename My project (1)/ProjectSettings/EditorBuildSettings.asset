@@ -5,21 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/FYP/Scenes/TutLevel.unity
+    guid: 6831597ec91568646be2588b9bc95f99
   - enabled: 1
     path: Assets/FYP/Scenes/Main Menu.unity
     guid: c23e945dd6a3d9049bd9d93e2e8532b8
   - enabled: 1
     path: Assets/FYP/Scenes/Level Select.unity
     guid: b05d71a46061dc543bae231587b8d087
-  - enabled: 1
-    path: Assets/FYP/Scenes/gamingTest.unity
-    guid: 5be9d578c4796ae4f91be9c64bd600d4
-  - enabled: 1
-    path: Assets/FYP/Scenes/_Gameover.unity
-    guid: 29ec72405c178894c83416cbf540e02d
   - enabled: 1
     path: Assets/FYP/Scenes/Special Reward Scene Type 2.unity
     guid: 536257cdd7ee3e441b079955fc8b92d1
@@ -44,4 +38,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FYP/Scenes/Level5.unity
     guid: 41345b574f057f644b47d6cfd52381c5
+  - enabled: 1
+    path: Assets/FYP/Scenes/Gameover.unity
+    guid: a4b84ddf291802b4b889669f7861fbcd
+  - enabled: 1
+    path: Assets/FYP/Scenes/Level6.unity
+    guid: a6c57455a3c437c4e9593b18b1d8e22b
+  - enabled: 1
+    path: Assets/FYP/Scenes/Level7.unity
+    guid: 9098a92360218be45a5f5db1cca6966e
+  - enabled: 1
+    path: Assets/FYP/Scenes/Level8.unity
+    guid: 9078e51ecd184e441b69529e7561880a
+  - enabled: 1
+    path: Assets/FYP/Scenes/Level9.unity
+    guid: 89b37a73cbe12a14f927cc26fdbc6210
+  - enabled: 1
+    path: Assets/FYP/Scenes/Level10(Final boss).unity
+    guid: 9500c5a5673e4ba45964baf46d98280e
   m_configObjects: {}

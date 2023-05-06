@@ -98,7 +98,7 @@ public class LevelManager : MonoBehaviour
     public void DeployObject()
     {
         //Instantiate(deplyableObjects[objectslection],worldPosition,new Quaternion(0,0,0,0));
-        GameObject spawnBomb = Instantiate(deplyableObjects[objectslection], WeaponSpawnLeftUP);
+        GameObject spawnBomb = Instantiate(deplyableObjects[0], WeaponSpawnLeftUP);
 
 
 
