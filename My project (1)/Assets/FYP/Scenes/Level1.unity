@@ -9443,6 +9443,7 @@ MonoBehaviour:
   bossLevel: 0
   tutorial: 0
   timeLimit: 0
+  endgameDialog: []
 --- !u!1 &874322233
 GameObject:
   m_ObjectHideFlags: 0

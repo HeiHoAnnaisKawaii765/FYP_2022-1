@@ -21,7 +21,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     TMP_Text WinLoseText,timeText;
     [SerializeField]
-    bool bossLevel,tutorial;
+    bool bossLevel,tutorial,L9;
     [SerializeField]
     float timeLimit;
     [SerializeField]
@@ -63,6 +63,10 @@ public class LevelManager : MonoBehaviour
             {
                 WinLoseText.text = "You Win";
                 StartCoroutine("WinLevel");
+                if(L9)
+                {
+                    PlayerPrefs.SetString("L9", "L9");
+                }
             }
             
         }

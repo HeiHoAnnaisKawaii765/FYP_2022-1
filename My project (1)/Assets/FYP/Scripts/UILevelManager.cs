@@ -8,7 +8,7 @@ public class UILevelManager : MonoBehaviour
 {
     public Button Start;
     public string SceneName;
-
+    string bossLevelTicket = PlayerPrefs.GetString("L9");
 public void NextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -19,7 +19,22 @@ public void NextScene()
         //int Sceneindex = SceneManager.GetActiveScene().buildIndex;
         //if (Sceneindex != SceneManager.sceneCount)
         {
-            SceneManager.LoadScene(loadSceneName);
+            if (loadSceneName == "Level10(Final boss)")
+            {
+                if(bossLevelTicket == "L9")
+                {
+                    SceneManager.LoadScene(loadSceneName);
+                }
+                else
+                {
+                    //remind player finish L9 first
+                }
+            }
+            else
+            {
+                SceneManager.LoadScene(loadSceneName);
+            }
+            
         }
     }
 

@@ -11172,6 +11172,7 @@ MonoBehaviour:
   bossLevel: 0
   tutorial: 0
   timeLimit: 0
+  endgameDialog: []
 --- !u!4 &765517214
 Transform:
   m_ObjectHideFlags: 0
@@ -19429,6 +19430,61 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1956637776}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1520221216}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 604296798}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 2021856969}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 725361489}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[5]
+      value: 
+      objectReference: {fileID: 980596968}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[6]
+      value: 
+      objectReference: {fileID: 966338436}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[7]
+      value: 
+      objectReference: {fileID: 1098433700}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[8]
+      value: 
+      objectReference: {fileID: 269060494}
+    - target: {fileID: 5129928519325876324, guid: bda9481d6f1ede04084e8ef9588b955d,
+        type: 3}
+      propertyPath: waypoints.Array.data[9]
+      value: 
+      objectReference: {fileID: 897750783}
     - target: {fileID: 5129928519325876325, guid: bda9481d6f1ede04084e8ef9588b955d,
         type: 3}
       propertyPath: m_RootOrder

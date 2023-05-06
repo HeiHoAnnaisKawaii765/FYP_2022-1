@@ -54,6 +54,8 @@ public class MainCharacter : MonoBehaviour
 
     Constrain constrain;
 
+    [SerializeField]
+    AudioSource hurtSE;
     void Start()
     {
         nextFire = Time.time;
@@ -168,6 +170,7 @@ public class MainCharacter : MonoBehaviour
     {
         if(other.tag == "Axe"||other.tag == "Arrow")
         {
+            hurtSE.Play();
             hp -= woundedhealth;
 
         }

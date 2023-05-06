@@ -33,8 +33,10 @@ public class BossScript : MonoBehaviour
     [SerializeField]
     Slider healthNar;
 
+    [SerializeField]
+    AudioSource hurtSE;
     // Start is called before the first frame update
-    
+
     void Start()
     {
         n = 0;
@@ -91,6 +93,7 @@ public class BossScript : MonoBehaviour
     {
         if (other.tag == "Bullet")
         {
+            hurtSE.Play();
             HP -= mc.atk;
         }
 

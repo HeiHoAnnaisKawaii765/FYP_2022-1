@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
     private Vector3 target;
     [SerializeField]
     int n;
+    [SerializeField]
+    AudioSource hurtSE;
 
     // Start is called before the first frame update
     void Start()
@@ -84,6 +86,7 @@ public class Enemy : MonoBehaviour
     {
         if(other.tag == "Bullet")
         {
+            hurtSE.Play();
             HP -= mc.atk * (1/ def);
         }
 
