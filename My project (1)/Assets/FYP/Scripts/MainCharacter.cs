@@ -64,7 +64,7 @@ public class MainCharacter : MonoBehaviour
         maxExp = 10000;
         exp = PlayerPrefs.GetInt("EXP");
         lv = PlayerPrefs.GetInt("LV");
-
+        atk *= lv;
         wayPt = waypoints[n].position;
 
     }

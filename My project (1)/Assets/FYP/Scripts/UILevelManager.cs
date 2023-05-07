@@ -52,5 +52,11 @@ public class UILevelManager : MonoBehaviour
     {
         Application.Quit();
     }
+    public void ResetData()
+    {
+        PlayerPrefs.SetInt("EXP", 0);
+        PlayerPrefs.SetInt("LV", 0);
+        PlayerPrefs.SetString("L9", "L8");
+    }
 }
 

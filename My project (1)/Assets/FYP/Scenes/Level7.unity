@@ -855,9 +855,10 @@ GameObject:
   m_Component:
   - component: {fileID: 45744682}
   - component: {fileID: 45744681}
+  - component: {fileID: 45744683}
   m_Layer: 0
   m_Name: Tiles_Grass_0 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -928,6 +929,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &45744683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45744680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &46073363
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,9 +4345,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 275926237}
+  - component: {fileID: 275926238}
   m_Layer: 0
   m_Name: Bridge
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4356,6 +4371,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &275926238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275926236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &277831135
 GameObject:
   m_ObjectHideFlags: 0
@@ -4366,9 +4394,10 @@ GameObject:
   m_Component:
   - component: {fileID: 277831137}
   - component: {fileID: 277831136}
+  - component: {fileID: 277831138}
   m_Layer: 0
   m_Name: water_22 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4439,6 +4468,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &277831138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277831135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &278671496
 GameObject:
   m_ObjectHideFlags: 0
@@ -4751,9 +4793,10 @@ GameObject:
   m_Component:
   - component: {fileID: 292262943}
   - component: {fileID: 292262942}
+  - component: {fileID: 292262944}
   m_Layer: 0
   m_Name: water_22 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4824,6 +4867,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &292262944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292262941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &297800403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,9 +4890,10 @@ GameObject:
   m_Component:
   - component: {fileID: 297800405}
   - component: {fileID: 297800404}
+  - component: {fileID: 297800406}
   m_Layer: 0
   m_Name: water_14
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4907,6 +4964,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &297800406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297800403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &299635333
 GameObject:
   m_ObjectHideFlags: 0
@@ -5533,9 +5603,10 @@ GameObject:
   m_Component:
   - component: {fileID: 350074152}
   - component: {fileID: 350074151}
+  - component: {fileID: 350074153}
   m_Layer: 0
   m_Name: water_22 (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5606,6 +5677,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &350074153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350074150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &352455705
 GameObject:
   m_ObjectHideFlags: 0
@@ -5616,9 +5700,10 @@ GameObject:
   m_Component:
   - component: {fileID: 352455707}
   - component: {fileID: 352455706}
+  - component: {fileID: 352455708}
   m_Layer: 0
   m_Name: water_22 (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5689,6 +5774,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &352455708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352455705}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &360348791
 GameObject:
   m_ObjectHideFlags: 0
@@ -6465,9 +6563,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421886543}
+  - component: {fileID: 421886544}
   m_Layer: 0
   m_Name: Bridge (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6490,6 +6589,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &421886544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421886542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &430204511
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,9 +6697,10 @@ GameObject:
   m_Component:
   - component: {fileID: 435645495}
   - component: {fileID: 435645494}
+  - component: {fileID: 435645496}
   m_Layer: 0
   m_Name: water_22 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6658,6 +6771,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &435645496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435645493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &437353012
 GameObject:
   m_ObjectHideFlags: 0
@@ -8695,9 +8821,10 @@ GameObject:
   m_Component:
   - component: {fileID: 586867906}
   - component: {fileID: 586867905}
+  - component: {fileID: 586867907}
   m_Layer: 0
   m_Name: water_22 (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8768,6 +8895,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &586867907
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586867904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &590553680
 GameObject:
   m_ObjectHideFlags: 0
@@ -9491,9 +9631,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 619281232}
+  - component: {fileID: 619281233}
   m_Layer: 0
   m_Name: Bridge (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9516,6 +9657,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &619281233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619281231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &632301342
 GameObject:
   m_ObjectHideFlags: 0
@@ -9690,9 +9844,10 @@ GameObject:
   m_Component:
   - component: {fileID: 642080733}
   - component: {fileID: 642080732}
+  - component: {fileID: 642080734}
   m_Layer: 0
   m_Name: water_22 (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9763,6 +9918,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &642080734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642080731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &642785255
 GameObject:
   m_ObjectHideFlags: 0
@@ -11003,9 +11171,10 @@ GameObject:
   m_Component:
   - component: {fileID: 750192638}
   - component: {fileID: 750192637}
+  - component: {fileID: 750192639}
   m_Layer: 0
   m_Name: water_22 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11076,6 +11245,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &750192639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750192636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &753738734
 GameObject:
   m_ObjectHideFlags: 0
@@ -11086,9 +11268,10 @@ GameObject:
   m_Component:
   - component: {fileID: 753738736}
   - component: {fileID: 753738735}
+  - component: {fileID: 753738737}
   m_Layer: 0
   m_Name: water_22 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11159,6 +11342,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &753738737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753738734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &755522543
 GameObject:
   m_ObjectHideFlags: 0
@@ -14039,9 +14235,10 @@ GameObject:
   m_Component:
   - component: {fileID: 916723150}
   - component: {fileID: 916723149}
+  - component: {fileID: 916723151}
   m_Layer: 0
   m_Name: water_14 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14112,6 +14309,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &916723151
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916723148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &917496972
 GameObject:
   m_ObjectHideFlags: 0
@@ -15596,9 +15806,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1000780663}
+  - component: {fileID: 1000780664}
   m_Layer: 0
   m_Name: Bridge (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15621,6 +15832,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1000780664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000780662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &1004663378
 GameObject:
   m_ObjectHideFlags: 0
@@ -20444,9 +20668,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1317078179}
   - component: {fileID: 1317078178}
+  - component: {fileID: 1317078180}
   m_Layer: 0
   m_Name: water_22 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20517,6 +20742,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1317078180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317078177}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &1321317591
 GameObject:
   m_ObjectHideFlags: 0
@@ -22137,9 +22375,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1418050672}
   - component: {fileID: 1418050671}
+  - component: {fileID: 1418050673}
   m_Layer: 0
   m_Name: water_14 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22210,6 +22449,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1418050673
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418050670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &1418228818
 GameObject:
   m_ObjectHideFlags: 0
@@ -25736,9 +25988,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1611766208}
   - component: {fileID: 1611766207}
+  - component: {fileID: 1611766209}
   m_Layer: 0
   m_Name: water_22 (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25809,6 +26062,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1611766209
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611766206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &1614419193
 GameObject:
   m_ObjectHideFlags: 0
@@ -31676,9 +31942,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1978473379}
   - component: {fileID: 1978473378}
+  - component: {fileID: 1978473380}
   m_Layer: 0
   m_Name: water_14 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31749,6 +32016,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1978473380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978473377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &1979091261
 GameObject:
   m_ObjectHideFlags: 0
@@ -32750,9 +33030,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2027697104}
   - component: {fileID: 2027697103}
+  - component: {fileID: 2027697105}
   m_Layer: 0
   m_Name: Tiles_Grass_0
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32823,6 +33104,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2027697105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027697102}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &2032436114
 GameObject:
   m_ObjectHideFlags: 0
@@ -33924,9 +34218,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2118945848}
   - component: {fileID: 2118945847}
+  - component: {fileID: 2118945849}
   m_Layer: 0
   m_Name: water_22
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33997,6 +34292,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2118945849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118945846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0}
 --- !u!1 &2129569492
 GameObject:
   m_ObjectHideFlags: 0

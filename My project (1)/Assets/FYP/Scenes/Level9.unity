@@ -8741,9 +8741,10 @@ GameObject:
   m_Component:
   - component: {fileID: 552758052}
   - component: {fileID: 552758051}
+  - component: {fileID: 552758053}
   m_Layer: 0
   m_Name: Crystal cavern 2.0
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8814,6 +8815,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &552758053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552758050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9531744, y: 4.566168, z: 0}
+  m_Center: {x: 0.022803549, y: -0.0047483086, z: 0}
 --- !u!1 &563728106
 GameObject:
   m_ObjectHideFlags: 0
@@ -20753,8 +20767,7 @@ MonoBehaviour:
   LeftDown: {fileID: 0}
   RightUP: {fileID: 0}
   RightDown: {fileID: 0}
-  WeaponSpawnLeftUP: {fileID: 6548086406668675394, guid: 58393132c96e00b42ae8e6a3a25a48a2,
-    type: 3}
+  WeaponSpawnLeftUP: {fileID: 1276406266}
   WeaponSpawnLeftDown: {fileID: 0}
   WeaponSpawnRightUP: {fileID: 0}
   WeaponSpawnRightDown: {fileID: 0}
