@@ -77,7 +77,11 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            WinLoseText.text = "Help the wizard to win the fight!";
+            if(!bossLevel)
+                {
+                    WinLoseText.text = "Help the wizard to win the fight!";
+            }
+            
             
         }
         if(bossLevel)
