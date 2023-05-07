@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     Vector3 worldPosition;
     public GameObject LeftUP, LeftDown, RightUP, RightDown;
     public Transform WeaponSpawnLeftUP, WeaponSpawnLeftDown, WeaponSpawnRightUP, WeaponSpawnRightDown;
-    public GameObject cam1, cam2, cam3, cam4, WLT, timeTXT;
+    public GameObject cam1, cam2, cam3, cam4, WLT, timeTXT,remindTXT;
     public Transform superWeaponSpawn;
     [SerializeField]
     TMP_Text WinLoseText,timeText;
@@ -36,6 +36,11 @@ public class LevelManager : MonoBehaviour
         if(timeTXT!=null)
         {
             timeTXT.SetActive(false);
+            
+        }
+        if(bossLevel)
+        {
+            WLT.SetActive(false);
         }
         
 
@@ -55,6 +60,8 @@ public class LevelManager : MonoBehaviour
             }
            else if(bossLevel)
             {
+                remindTXT.SetActive(false);
+                WLT.SetActive(true);
                 WinLoseText.text = endgameDialog[n];
                 StartCoroutine("BossWinLevel");
                 
@@ -77,11 +84,8 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            if(!bossLevel)
-                {
-                    WinLoseText.text = "Help the wizard to win the fight!";
-            }
-            
+
+            WinLoseText.text = "Help the wizard to win the fight!";
             
         }
         if(bossLevel)
@@ -91,6 +95,8 @@ public class LevelManager : MonoBehaviour
             timeText.text = "Time" + timeLimit.ToString();
             if (timeLimit <=0)
             {
+                remindTXT.SetActive(false);
+                WLT.SetActive(true);
                 WinLoseText.text = "The great time war begins,is over";
                 StartCoroutine("LoseLevel");
             }
