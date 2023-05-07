@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
     string[] endgameDialog;
     string[] sceneName = { "Special Reward Scene Type 2", "Special Reward Scene Type 3", "Special Reward Scene" };
     int n = 0;
-
+    float nextline;
     // Start is called before the first frame update
 
     void Start()
@@ -41,6 +41,7 @@ public class LevelManager : MonoBehaviour
         if(bossLevel)
         {
             WLT.SetActive(false);
+            nextline = Time.time;
         }
         
 
@@ -63,7 +64,12 @@ public class LevelManager : MonoBehaviour
                 remindTXT.SetActive(false);
                 WLT.SetActive(true);
                 WinLoseText.text = endgameDialog[n];
-                StartCoroutine("BossWinLevel");
+                AutoNextLine();
+                if(n>=endgameDialog.Length)
+                {
+                    StartCoroutine("BossWinLevel");
+                }
+                
                 
             }
            else
@@ -129,16 +135,18 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator BossWinLevel()
     {
-        
-        
-        for (int i = 0; i <= endgameDialog.Length; i++)
-        {
-            n = i;
-            
-            yield return new WaitForSeconds(2);
-            
-        }
+
+
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Main Menu");
+    }
+    void AutoNextLine()
+    {
+        if (Time.time > nextline)
+        {
+            n += 1;
+            nextline = Time.time + 3;
+        }
     }
 
 
