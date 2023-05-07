@@ -20782,7 +20782,7 @@ MonoBehaviour:
   timeText: {fileID: 0}
   bossLevel: 0
   tutorial: 0
-  L9: 0
+  L9: 1
   timeLimit: 0
   endgameDialog: []
 --- !u!4 &1366529816
