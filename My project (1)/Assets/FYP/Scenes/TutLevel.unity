@@ -9910,6 +9910,7 @@ MonoBehaviour:
   cam4: {fileID: 0}
   WLT: {fileID: 0}
   timeTXT: {fileID: 0}
+  remindTXT: {fileID: 0}
   superWeaponSpawn: {fileID: 0}
   WinLoseText: {fileID: 0}
   timeText: {fileID: 0}
@@ -11893,7 +11894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028019275}
   m_LocalRotation: {x: 0.12459863, y: 0.97948116, z: 0.15677986, w: -0.02262668}
-  m_LocalPosition: {x: 0.216, y: -0.539, z: 0.569}
+  m_LocalPosition: {x: 0.14, y: -0.48, z: 0.569}
   m_LocalScale: {x: 1.829289, y: 1.829289, z: 1.8292888}
   m_Children:
   - {fileID: 952005336}
