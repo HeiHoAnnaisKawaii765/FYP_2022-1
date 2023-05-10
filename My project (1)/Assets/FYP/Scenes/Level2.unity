@@ -29828,6 +29828,7 @@ MonoBehaviour:
   cam4: {fileID: 0}
   WLT: {fileID: 0}
   timeTXT: {fileID: 0}
+  remindTXT: {fileID: 0}
   superWeaponSpawn: {fileID: 0}
   WinLoseText: {fileID: 1556499032}
   timeText: {fileID: 0}
@@ -30250,10 +30251,10 @@ MonoBehaviour:
   controllingHand: {fileID: 1992823590}
   controlling: 0
   cam: {fileID: 620175184}
-  upBorder: 12.38
-  downBorder: 0.68
-  leftBorder: -2.01
-  rightBorder: 11.61
+  upBorder: 19.59
+  downBorder: -5.64
+  leftBorder: -10.84
+  rightBorder: 20.5
   cenPos: {fileID: 882625371}
 --- !u!65 &1992823594
 BoxCollider:
