@@ -24,7 +24,10 @@ public class SpecialRewardLevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            EndLevel();
+        }
     }
     void EndLevel()
     {
@@ -48,5 +51,6 @@ public class SpecialRewardLevelManager : MonoBehaviour
     {
         currentXP += n;
     }
+    
     
 }
